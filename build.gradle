@@ -29,6 +29,10 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	// Spring Boot Starter Data JPA
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	// MySQL Driver (MySQL DB를 사용할 경우)
+	implementation 'mysql:mysql-connector-java:8.0.26'
 }
 
 tasks.named('test') {
